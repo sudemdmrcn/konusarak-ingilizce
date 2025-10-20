@@ -1,74 +1,3 @@
-<!-- <!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SpeakBuddy — İngilizce Konuşma Yardımcısı</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="container">
-    <header>
-      <h1>SpeakBuddy</h1>
-      <p class="subtitle">Konuş → Yazıya dök → Hataları gör → Düzeltmeyi dinle</p>
-    </header>
-
-    <section class="recorder">
-      <div class="controls">
-        <button id="btnStart" class="mic">
-          <span id="micIcon">🎤</span>
-          <span id="btnText">Başlat</span>
-        </button>
-        <label class="lang-label">Dil:
-          <select id="langSelect">
-            <option value="en-US" selected>English (US)</option>
-            <option value="en-GB">English (UK)</option>
-          </select>
-        </label>
-        <button id="btnPlay" title="Düzeltmeyi dinle" disabled>🔊 Dinle</button>
-      </div>
-
-      <div class="panels">
-        <div class="panel">
-          <h3>Canlı Yazıya Dönüş (Transkript)</h3>
-          <textarea id="transcript" readonly placeholder="Burada konuşurken yazı görünecek..."></textarea>
-        </div>
-
-        <div class="panel">
-          <h3>Düzeltilmiş Hali</h3>
-          <textarea id="corrected" readonly placeholder="Düzeltme burada görünecek..."></textarea>
-          <div id="suggestions" class="suggestions"></div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <small>Basit proje başlangıcı • Tarayıcıdan mikrofon izni gerekir • LanguageTool entegrasyonu isteğe bağlı</small>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html lang="tr">
 <head>
@@ -122,6 +51,27 @@
           <div id="suggestions" class="suggestions"></div>
         </div>
       </div>
+
+<!-- //*************************************************************************** -->
+
+
+      <!-- <section id="statsCard" class="stats-card">
+        <h3>📊 Your Practice Stats</h3>
+        <p>Total Sentences: <span id="totalSentences">0</span></p>
+        <p>Total Mistakes: <span id="totalMistakes">0</span></p>
+        <p>Accuracy: <span id="accuracy">0%</span></p>
+    </section> -->
+
+
+
+        <!-- <section class="history-section">
+            <h3>🕓 Conversation History</h3>
+            <div id="historyList" class="history-list">
+                <p class="empty">No conversations yet.</p>
+            </div>
+        </section> -->
+
+<!-- //******************************************************************* -->
 
       <div class="history-section">
         <h3>Konuşma Geçmişi</h3>

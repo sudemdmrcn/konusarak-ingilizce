@@ -281,3 +281,43 @@ footer {
   .panels { grid-template-columns: 1fr; }
   .container { margin: 12px; }
 }
+
+
+/* 🌟 Buton animasyonu */
+button, .mic {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .mic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(240, 139, 164, 0.3);
+}
+
+/*
+ 💗 İstatistik Kartı
+.stats-card {
+  margin-top: 20px;
+  background: #fff0f6;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(235, 155, 180, 0.25);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+} */
+ 
+
+.stats-card h3 {
+  color: #d2799f;
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  margin: 6px 0;
+  color: #66394a;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
