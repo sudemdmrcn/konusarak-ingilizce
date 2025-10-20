@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
@@ -49,4 +49,95 @@
 
   <script src="script.js"></script>
 </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SpeakBuddy — İngilizce Konuşma Yardımcısı (Gelişmiş)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>SpeakBuddy</h1>
+      <p class="subtitle">Konuş → Yazıya dök → Hataları gör → Düzeltmeyi dinle • Geçmiş & seviye</p>
+    </header>
+
+    <section class="recorder">
+      <div class="controls">
+        <button id="btnStart" class="mic">
+          <span id="micIcon">🎤</span>
+          <span id="btnText">Başlat</span>
+        </button>
+
+        <label class="lang-label">Dil:
+          <select id="langSelect">
+            <option value="en-US" selected>English (US)</option>
+            <option value="en-GB">English (UK)</option>
+          </select>
+        </label>
+
+        <button id="btnPlay" title="Düzeltmeyi dinle" disabled>🔊 Dinle</button>
+        <button id="btnSave" title="Geçmişe kaydet" disabled>💾 Kaydet</button>
+      </div>
+
+      <div class="panels">
+        <div class="panel">
+          <h3>Canlı Yazıya Dönüş (Transkript)</h3>
+          <textarea id="transcript" readonly placeholder="Burada konuşurken yazı görünecek..."></textarea>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Düzeltilmiş Hali</h3>
+            <div id="levelBadge" class="level-badge">Seviye: -</div>
+          </div>
+
+          <div id="correctedWrap" class="corrected-wrap" aria-live="polite">
+            <!-- Renklendirilmiş düzeltilmiş metin buraya geliyor -->
+            <div id="corrected" class="corrected" ></div>
+          </div>
+
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+      </div>
+
+      <div class="history-section">
+        <h3>Konuşma Geçmişi</h3>
+        <div id="historyList" class="history-list">
+          <!-- Geçmiş kayıtları buraya eklenecek -->
+          <div class="empty">Henüz geçmiş yok. Konuşup kaydettiğinde burada görüntülenecek.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small>Local demo • LanguageTool kullanılabilir ama CORS sorununda fallback uygulanır.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
